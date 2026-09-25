@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trang Du Lịch/Tour</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-left">
+        <a href="#" class="logo">DU LỊCH</a>
+        <ul class="nav-links">
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Tour trong nước</a></li>
+          <li><a href="#">Tour ngoài nước</a></li>
+          <li><a href="#">Cẩm nang</a></li>
+        </ul>
+      </nav>
+
+      <div class="theme-switch">
+        <input type="checkbox" id="theme-toggle" />
+        <label for="theme-toggle" class="theme-btn">
+          <span class="light-mode">Light</span>
+          <span class="dark-mode">Light/Dark</span>
+        </label>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">DU LỊCH</h1>
+        <p class="hero-slogan">Mở lối đi, chạm chân trời mới</p>
+        <a href="#tours" class="hero-btn">Khám phá ngay</a>
+      </div>
+    </section>
+    <section class="tours">
+      <h2 class="section-title">Tour du lịch nổi bật</h2>
+
+      <div class="tour-grid">
+        <div class="tour-card">
+          <img src="imgs/anh-vinh-ha-long-7.jpg" alt="Vịnh Hạ Long" />
+          <div class="tour-info">
+            <h3 class="tour-name">Vịnh Hạ Long 3N2Đ</h3>
+            <p class="tour-detail">🗓️ 3 ngày 2 đêm</p>
+            <p class="tour-detail">📍 Khởi hành: Hà Nội</p>
+            <p class="tour-price">2.590.000₫</p>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <img src="imgs/dalat.jpg" alt="Đà Lạt" />
+          <div class="tour-info">
+            <h3 class="tour-name">Đà Lạt Mộng Mơ</h3>
+            <p class="tour-detail">🗓️ 4 ngày 3 đêm</p>
+            <p class="tour-detail">📍 Khởi hành: TP.HCM</p>
+            <p class="tour-price">3.190.000₫</p>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <img src="imgs/phu-quoc.jpg" alt="Phú Quốc" />
+          <div class="tour-info">
+            <h3 class="tour-name">Phú Quốc Biển Xanh</h3>
+            <p class="tour-detail">🗓️ 3 ngày 2 đêm</p>
+            <p class="tour-detail">📍 Khởi hành: TP.HCM</p>
+            <p class="tour-price">4.290.000₫</p>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <img src="imgs/sapamayngan.jpg" alt="Sapa" />
+          <div class="tour-info">
+            <h3 class="tour-name">Sapa Mây Ngàn</h3>
+            <p class="tour-detail">🗓️ 2 ngày 1 đêm</p>
+            <p class="tour-detail">📍 Khởi hành: Hà Nội</p>
+            <p class="tour-price">1.890.000₫</p>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <img src="imgs/dananghoian.jpg" alt="Đà Nẵng" />
+          <div class="tour-info">
+            <h3 class="tour-name">Đà Nẵng - Hội An</h3>
+            <p class="tour-detail">🗓️ 4 ngày 3 đêm</p>
+            <p class="tour-detail">📍 Khởi hành: Hà Nội</p>
+            <p class="tour-price">3.590.000₫</p>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <img src="imgs/nhatrang.jpg" alt="Nha Trang" />
+          <div class="tour-info">
+            <h3 class="tour-name">Nha Trang Biển Đảo</h3>
+            <p class="tour-detail">🗓️ 3 ngày 2 đêm</p>
+            <p class="tour-detail">📍 Khởi hành: TP.HCM</p>
+            <p class="tour-price">2.990.000₫</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="booking" id="booking">
+      <h2 class="section-title">Đặt tour</h2>
+
+      <form class="booking-form">
+        <div class="form-group">
+          <label for="fullname">Họ và tên</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Nguyễn Văn A"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="[email protected]"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Điện thoại</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="0901 234 567"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="departure-date">Ngày khởi hành</label>
+          <input
+            type="date"
+            id="departure-date"
+            name="departure-date"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="guests">Số khách</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            value="1"
+            required
+          />
+        </div>
+
+        <div class="form-group form-group-full">
+          <label>Loại phòng</label>
+          <div class="radio-group">
+            <label class="radio-option">
+              <input type="radio" name="room-type" value="single" checked />
+              Phòng đơn
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="room-type" value="double" />
+              Phòng đôi
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="room-type" value="family" />
+              Phòng gia đình
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="tour-select">Tour muốn đi</label>
+          <select id="tour-select" name="tour-select" required>
+            <option value="">-- Chọn tour --</option>
+            <option value="halong">Vịnh Hạ Long 3N2Đ</option>
+            <option value="dalat">Đà Lạt Mộng Mơ</option>
+            <option value="phuquoc">Phú Quốc Biển Xanh</option>
+            <option value="sapa">Sapa Mây Ngàn</option>
+            <option value="danang">Đà Nẵng - Hội An</option>
+            <option value="nhatrang">Nha Trang Biển Đảo</option>
+          </select>
+        </div>
+
+        <div class="form-group form-group-full">
+          <label>Dịch vụ thêm</label>
+          <div class="checkbox-group">
+            <label class="checkbox-option">
+              <input type="checkbox" name="extra-service" value="insurance" />
+              Bảo hiểm du lịch
+            </label>
+            <label class="checkbox-option">
+              <input type="checkbox" name="extra-service" value="guide" />
+              Hướng dẫn viên riêng
+            </label>
+            <label class="checkbox-option">
+              <input
+                type="checkbox"
+                name="extra-service"
+                value="airport-pickup"
+              />
+              Đưa đón sân bay
+            </label>
+            <label class="checkbox-option">
+              <input
+                type="checkbox"
+                name="extra-service"
+                value="meal-upgrade"
+              />
+              Nâng cấp bữa ăn
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group form-group-full">
+          <label for="special-request">Yêu cầu đặc biệt</label>
+          <textarea
+            id="special-request"
+            name="special-request"
+            rows="4"
+            placeholder="Ví dụ: ăn chay, phòng tầng cao, kỷ niệm ngày cưới..."
+          ></textarea>
+        </div>
+
+        <div class="form-group form-group-full form-actions">
+          <button type="submit" class="btn-submit">Đặt tour</button>
+          <button type="reset" class="btn-cancel">Hủy</button>
+        </div>
+      </form>
+    </section>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-line">
+          📍 Địa chỉ văn phòng: 123 Đường Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh
+        </p>
+        <p class="footer-line">
+          📄 Số giấy phép lữ hành: 79-123/2024/TCDL-GP LHQT
+        </p>
+        <p class="footer-line">📞 Hotline: 1900 1234</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 DU LỊCH. Bảo lưu mọi quyền.</p>
+      </div>
+    </footer>
+  </body>
+</html>
