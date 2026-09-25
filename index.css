@@ -82,8 +82,8 @@ body {
 .light-mode { display: none; }
 .dark-mode { display: inline; }
 
-#theme-toggle:checked ~ .theme-btn .icon-sun { display: inline; }
-#theme-toggle:checked ~ .theme-btn .icon-moon { display: none; }
+#theme-toggle:checked ~ .theme-btn .light-mode { display: inline; }
+#theme-toggle:checked ~ .theme-btn .dark-mode { display: none; }
 
 .hero {
   position: relative;
